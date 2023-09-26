@@ -13,6 +13,25 @@ h1 {color:blue; font-size:50px;}
 h2 {color:#FF00FF; font-size:40px;}
 
 </style>
+<script>
+
+function change1() {
+
+document.getElementById("pic").src = "mountain.jpg";
+
+document.getElementById("h2text").innerText = "靜宜資管";
+
+}
+
+function change2() {
+
+document.getElementById("pic").src = "cliff.jpg";
+
+document.getElementById("h2text").innerText = "Benson Wu";
+
+}
+
+</script>
 </head>
 
 <body>
@@ -72,6 +91,28 @@ E-Mail: <a href="mailto:tcyang@pu.edu.tw">tcyang@pu.edu.tw</a><br>
 不要去臺灣<br>
 
 <iframe src="https://www.youtube.com/embed/pW88QFpHXa8" allowfullscreen></iframe>
+
+</td>
+
+</tr>
+
+</table>
+<table width="70%">
+
+<tr>
+
+<td>
+
+<img src="cliff.jpg" width="110%" id="pic"
+onmouseover="change1()" onmouseout="change2()"></img>
+
+</td>
+
+<td>
+
+<h1>吳柏翰</h1>
+
+<h2 id="h2text">Benson Wu</h2>
 
 </td>
 
